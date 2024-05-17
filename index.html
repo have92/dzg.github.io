@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图片</title>
+    <style>
+        /* 设置背景图片 */
+        body {
+            background-image: url('image.jpg'); /* 替换为你的图片路径 */
+            background-size: cover; /* 图片铺满整个屏幕 */
+            background-position: center; /* 图片居中显示 */
+            background-repeat: no-repeat; /* 不重复显示图片 */
+            height: 100vh; /* 使背景图填充整个浏览器窗口 */
+            margin: 0; /* 移除页面的默认边距 */
+            padding: 0; /* 移除页面的默认内边距 */
+            display: flex; /* 使用 Flexbox 布局 */
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+        }
+
+        /* 样式按钮 */
+        .button {
+            background-color: #4CAF50; /* 绿色 */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition-duration: 0.4s;
+        }
+
+        /* 鼠标悬停样式 */
+        .button:hover {
+            background-color: #45a049; /* 深绿色 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 添加按钮类 -->
+    <button class="button" onclick="redirectToTaobao()">去淘宝</button>
+    <button class="button" onclick="redirectToPinduoduo()">去拼多多</button>
+    <button class="button" onclick="redirectToJD()">去京东</button>
+
+    <script>
+        function redirectToTaobao() {
+            window.location.href = "https://www.taobao.com/";
+        }
+
+        function redirectToPinduoduo() {
+            window.location.href = "https://www.pinduoduo.com/";
+        }
+
+        function redirectToJD() {
+            window.location.href = "https://www.jd.com/";
+        }
+    </script>
+</body>
+</html>
